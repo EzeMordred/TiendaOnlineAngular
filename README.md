@@ -1,55 +1,65 @@
-# E-Commerce open source
-Creado con Node.js, Angular y MySQL
-![E-Commerce open source con Node.js y Angular](https://parzibyte.me/blog/wp-content/uploads/2020/06/E-Commerce-en-Angular-y-Node-Vista-principal-de-tienda.png)
+# Tienda de Ropa Online - Proyecto en Angular con MySQL
 
-# Tutorial
-Justo aquí: https://parzibyte.me/blog/2020/06/10/pequeno-e-commerce-angular-node-mysql-tienda-online/
+## Descripción del Proyecto
 
-# Instalación
-## Requisitos
-* Angular CLI
-* Node y NPM
-* MySQL / MariaDB
-## Pasos
-1. Clonar o descargar este repositorio. En la terminal navegar al directorio y ejecutar ``npm install`` para instalar las dependencias de Angular y cosas del lado del cliente
-2. Ahora navegar a la carpeta **api** y ejecutar lo mismo: ``npm install``
-3. Crear base de datos y usuario en MySQL
-4. Crear archivo **.env** a partir del ejemplo **.env.example** (dentro de **api**)
-5. Importar **esquema.sql** a la base de datos recién creada en el paso 3
-6. Configurar credenciales de la base de datos en **.env** (está dentro de **api**)
-7. En la carpeta raíz ejecutar ``ng serve``
-8. Abrir otra terminal, y dentro de **api** ejecutar ``node index.js`` 
-9. Navegar a localhost:4200
+Este proyecto es una aplicación web desarrollada en Angular que simula una tienda de ropa online. La información sobre los productos, usuarios y transacciones se almacena en una base de datos MySQL. La aplicación permite a los usuarios navegar por la tienda, ver detalles de productos, realizar compras y gestionar sus perfiles.
 
-__sordid details following...__
+## Funcionalidades Principales
 
-# Créditos
-La imagen de "Gracias por su compra" fue tomada de https://icons8.com
+1. **Catálogo de Productos:**
+   - Muestra una amplia gama de productos de moda organizados por categorías.
 
-# ECommerceAngularNode
+2. **Detalles del Producto:**
+   - Permite a los usuarios ver detalles específicos de cada producto, como descripción, precio y disponibilidad.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
+3. **Carrito de Compras:**
+   - Los usuarios pueden agregar productos a su carrito de compras y realizar compras seguras.
 
-## Development server
+4. **Gestión de Usuarios:**
+   - Registro de nuevos usuarios y autenticación para acceder a perfiles personales.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+5. **Historial de Compras:**
+   - Los usuarios registrados pueden revisar su historial de compras y realizar un seguimiento de sus pedidos.
 
-## Code scaffolding
+6. **Base de Datos MySQL:**
+   - Almacena la información esencial, como productos, usuarios y transacciones, en una base de datos MySQL.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+7. **Interfaz Responsiva:**
+   - Diseño responsive para garantizar una experiencia de usuario consistente en diferentes dispositivos.
 
-## Build
+## Requisitos del Sistema
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- **Node.js y npm:** Asegúrate de tener Node.js y npm instalados en tu sistema.
 
-## Running unit tests
+- **Angular CLI:** Se necesita Angular CLI para compilar y ejecutar la aplicación.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **MySQL:** Es necesario tener un servidor MySQL para la gestión de la base de datos.
 
-## Running end-to-end tests
+## Configuración y Uso
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1. Clona o descarga el repositorio en tu máquina local.
 
-## Further help
+2. Navega hasta el directorio del proyecto y ejecuta `npm install` para instalar las dependencias.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+3. Configura la conexión a la base de datos MySQL en el archivo de configuración.
+
+4. Crea la base de datos y las tablas utilizando scripts SQL proporcionados en la carpeta correspondiente.
+
+5. Ejecuta `ng serve` para iniciar el servidor de desarrollo de Angular.
+
+6. Abre el navegador y accede a `http://localhost:4200` para utilizar la aplicación.
+
+## Estructura del Proyecto
+
+- **src/app/components:** Contiene los componentes de Angular, como catálogo, detalles del producto, carrito de compras, etc.
+
+- **src/app/services:** Define los servicios que interactúan con la base de datos y gestionan la lógica de la aplicación.
+
+- **src/app/models:** Contiene las clases de modelos para representar productos, usuarios, transacciones, etc.
+
+- **src/app/database:** Incluye scripts SQL para la creación de la base de datos y las tablas.
+
+## Contribuciones y Problemas
+
+Si encuentras problemas, tienes sugerencias o deseas contribuir al proyecto, por favor, abre un issue en el repositorio. ¡Las contribuciones son bienvenidas!
+
